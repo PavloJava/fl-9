@@ -1,0 +1,206 @@
+body {
+    font-family: $font;
+    background-color: $color_page;
+}
+
+.main-wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    img {
+        width: 380px;
+        height: 250px;
+    }
+
+    nav {
+        width: 1000px;
+        border-top: 1px solid $color_border;
+        border-bottom: 1px solid $color_border;
+        display: flex;
+        justify-content: space-around;
+        padding: 17px;
+        margin-bottom: 35px;
+
+        a {
+            font-size: 17px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color_header;
+            position: relative;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.toolbar {
+    text-align: right;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    input {
+        height: 40px;
+        width: 190px;
+        padding-left: 14px;
+        border: 1px solid $color_header;
+        background-color: $color_page;
+
+        &::placeholder {
+            color: $color_header;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    article {
+        width: 460px;
+        padding: 12px;
+        margin-bottom: 15px;
+        background-color: $color_background;
+
+        .post-description {
+            color: $post-description;
+            border-bottom: 1px solid $color_border;
+            margin: 10px;
+            padding-bottom: 10px;
+            line-height: 10px;
+            font-size: $artical_text_size;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: $article-title;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 10px 2px 10px;
+        }
+
+        p {
+            color: $color_text;
+            padding: 0 10px 25px 10px;
+            font-size: $text_size;
+            line-height: 22px;
+            margin: auto;
+        }
+
+        img {
+            width: 460px;
+        }
+    }
+}
+.about {
+    max-width: 1000px;
+    margin-top: 70px;
+    padding-left: 10px;
+
+    h1 {
+        text-align: right;
+        text-transform: uppercase;
+        color: $color_header;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    p {
+        margin: 0 0 20px 0;
+        color: $color_text;
+        line-height: 24px;
+        font-size: $text_size;
+    }
+    img {
+        width: 100%;
+    }
+}
+.contact-form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+
+    h1 {
+        text-align: right;
+        text-transform: uppercase;
+        color: $color_header;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    h4 {
+        text-align: right;
+        text-transform: uppercase;
+        color: $color_header;
+        font-size: $content_size;
+        margin: 0;
+    }
+
+    textarea {
+        margin: 10px 0 10px 0;
+        border: 1px solid $color_border;
+        padding-left: 10px;
+        padding-top: 10px;
+
+        &::placeholder {
+            font-family: $font;
+            font-size: $content_size;
+            color: $color_text;
+        }
+    }
+
+    input {
+        margin: 10px 0 10px 0;
+        height: 40px;
+        border: 1px solid $color_border;
+        padding-left: 15px;
+
+        &::placeholder {
+            color: $color_text;
+            font-size: $content_size;
+        }
+    }
+
+    button {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        width: 190px;
+        height: 40px;
+        color: $color_background;
+        background: $color_header;
+        border: none;
+        text-transform: uppercase;
+        font-size: $artical_text_size;
+        font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+            background: $color_page;
+            color: $color_header;
+            box-shadow: inset 0 0 0 3px $color_header;
+        }
+    }
+}
+
+footer {
+    font-size: $artical_text_size;
+    color: $color_text;
+}
