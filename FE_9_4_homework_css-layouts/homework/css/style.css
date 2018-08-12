@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "open sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("open sans Regular"), local("opensans-regular"), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format("woff2");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    max-width: 1300px;
+    min-width: 900px;
+    font-family: "open sans";
+    margin: auto;
+}
+header{
+    height: 740px;
+    position: relative;
+    background: url("../img/apples.jpg");
+    background-position: center;
+    color: rgb(255, 255, 255); 
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px; 
+
+}
+.logo{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 3px; 
+}
+.navbar{
+    width: 400px; 
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-size: 14px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 260px
+}
+.title h1{
+     text-decoration: none;
+    font-weight: normal;
+    font-size: 55px;
+    letter-spacing: 6px; 
+}
+.amper{
+    font-size: 85px; 
+}
+.title p{
+    font-size: 14px;
+}
+.header-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    height: 50px;
+    width: 250px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    bottom: 145px;
+}
+.header-button:hover {
+    background: rgba(0, 0, 0, 0); 
+}
+.header-button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+}
+.header-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 130px 40px 60px 40px;
+    background-color: rgb(255, 255, 255);
+}
+.header-text-left{
+    max-width: 650px;
+}
+.header-text-right{
+    max-width: 600px;
+}
+.header-text-left p{
+    font-weight: normal;
+    font-size: 25px;
+    padding-right: 55px;
+
+}
+.header-text-right p{
+    font-size: 14px; 
+}
+.main{
+    background-color: rgb(243,243,243);
+    padding: 60px; 
+    margin-top: 80px;
+}
+.main-title{
+    margin: 80px 80px 80px 0px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px; 
+}
+article{
+    display: flex;
+    justify-content: space-between; 
+    margin: 15px;
+}
+.imag-section{
+    position: relative;
+    max-width: 800px; 
+}
+.article-text{
+    width: 350px;
+    padding-top: 70px;
+    font-size: 15px; 
+    text-align: center;
+}
+.imag-section h4{
+    font-size: 15px;
+    color: rgb(255, 255, 255); 
+    font-weight: normal;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+.img:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 770px;
+    height: 300px;
+    box-shadow: inset 0px 0px 180px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.imag-section button {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-family: "open sans";
+}
+.imag-section button:hover {
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer; 
+}
+.main-footer{
+    padding: 40px 10px 40px 40px;
+    background-color: rgb(255, 255, 255);
+    margin: 40px 15px 0px 15px;
+    display: flex;
+    justify-content: space-around; 
+}
+.main-footer h3{
+    font-weight: normal;
+    font-size: 18px; 
+}
+.input{
+    width: 70%;
+    display: flex; 
+}
+.input input{
+     width: 85%;
+    background-color: rgb(243,243,243);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 2%; 
+}
+.input input::placeholder {
+    color: rgb(0, 0, 0); 
+}
+.input button {
+    width: 15%;
+    border: none;
+    background-color: rgb(52,54,56);
+    color: rgb(255, 255, 255);
+    font-family: "open sans";
+    font-size: 15px; 
+}.input button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer; 
+}footer {
+    padding: 40px 55px 0 55px; 
+} 
+.footer {
+    background-color: rgb(255,255,255);
+    padding-bottom: 60px;
+    display: flex;
+    align-items: flex-start; 
+}    
+.footer h4 {
+    font-size: 18px;
+    margin: 0 20px 0 0; 
+}   
+.footer p {
+    color: rgb(158,158,158);
+    margin-bottom: 5px; 
+}   
+.black-white {
+    display: flex;
+    flex-direction: column;
+    max-width: 24%;
+    padding: 30px 15px 30px 0px; 
+}   
+.last-tweet {
+    display: flex;
+    flex-direction: column;
+    max-width: 24%;
+    padding: 30px 15px 30px 15px; 
+}
+.italic {
+    font-style: italic; 
+}
+.timer p {
+    margin-top: 3px;
+    color: rgb(232,232,232); 
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 30px 30px 30px 15px; 
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    padding: 30px 0px 30px 60px; 
+}
+.input-footer {
+    width: 100%;
+    display: flex; 
+}
+.input-footer input {
+    width: 65%;
+    background-color: rgb(243,243,243);
+    border: 1px solid rgb(0,0,0);
+    font-size: 14px;
+    padding: 4%; 
+}
+.input-footer input::placeholder {
+    color: rgb(0,0,0); 
+}
+.input-footer button {
+    padding: 1px;
+    width: 35%;
+    border: none;
+    background-color: rgb(52,54,56);
+    color: rgb(255,255,255);
+    font-family: "open sans";
+    font-size: 14px; 
+}
+.input-footer button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer; 
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid rgb(240,240,240);
+    padding-top: 15px;
+    padding-bottom: 25px; 
+}
+
+.footer-nav p {
+    color: rgb(158,158,158); 
+}
+  
+.footer-nav nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px; 
+}
+    
+.footer-nav nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0,0,0); 
+}
