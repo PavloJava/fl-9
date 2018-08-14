@@ -1,0 +1,190 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+
+  /* These styles are needed only for media query max-width: 575px */
+
+  /* The 'Up' button (circle button at right bottom corner) */
+  --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+}
+
+/* Your styles go here */
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 1.3em;
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box; 
+  max-width: 1400px;
+}
+img {
+  width: 100%;
+}
+.nav  {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.5em;
+  margin-top: 0;
+  padding: 0;
+}
+.nav li {
+  width:100%;
+  align-self: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+.nav a {
+  letter-spacing: -1px;
+  margin-left: 0.7em;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #54597d;
+}
+.nav a:active {
+  color: #54597d;
+  font-weight: bold;
+}
+.sun {
+  color: #5d5d5d;
+}
+.moon {
+  font-weight: bold;
+  color: #54597d;
+}
+.header-title {
+  margin-bottom: 3em;
+  text-align: center;
+  padding: 0 2em;
+}
+h2 {
+  color: #484747;
+  margin: 35px 0;
+}
+.grid ul{
+padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+article {
+  padding-right: 1.6em;
+  padding-left: 2.1em;
+  color: #5d5d5d;
+}
+article p {
+  text-indent: 1.5em;
+  text-align: justify;
+  font-size: 0.9em;
+}
+.content {
+  margin: 2em 0;
+}
+article img {
+  margin: 2em 0;
+}
+.up_btn {
+  position: fixed;
+  width: 4em;
+  height: 4em;
+  color: #fff;
+  background-color: #5ebcff;
+  line-height: 3.7em;
+  border-radius: 50%;
+  box-shadow: 9px 9px 15px #d3d3d3;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  text-decoration: none; 
+}
+#section-a li:last-of-type{
+  margin-bottom: 8em;
+}
+
+/* medium_screan */
+
+@media (min-width: 575px) {
+ 
+  body {
+    background-color: #0a1223;
+  }
+  .nav li {
+    padding: 0 .7em;
+    border: none;
+    width: auto;
+  }
+  .nav {
+    padding-top: 1.5em;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+  }
+  .moon {
+    font-weight: normal;
+  }
+  h1 {
+    color: #ddd;
+    margin: 3em 1em;
+  }
+  h2 {
+    background: linear-gradient(to right, #ddd, #5d5d5d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  article {
+    padding: 0 4em;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+/* large_screan */
+
+@media (min-width: 991px) {
+  
+  .nav {
+    justify-content: flex-end;
+    padding-right: 1em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  article {
+    padding: 0 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 2em;
+    column-gap: 1.5em;
+  }
+  .content {
+    margin: 1em 0;
+  }
+  article img {
+    margin: 0;
+  }
+  #section li:nth-child(even) img{
+    grid-row: 1;
+  }  
+}
